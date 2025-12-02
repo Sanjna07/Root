@@ -1,7 +1,17 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+"compilerOptions": {
+"target": "ES2022",
+"useDefineForClassFields": true,
+"lib": ["DOM", "ES2022"],
+"jsx": "react-jsx",
+"module": "ESNext",
+"moduleResolution": "Node",
+"strict": true,
+"esModuleInterop": true,
+"skipLibCheck": true,
+"forceConsistentCasingInFileNames": true,
+"resolveJsonModule": true,
+"isolatedModules": true
+},
+"include": ["src"]
 }
