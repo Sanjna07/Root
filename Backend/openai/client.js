@@ -5,5 +5,5 @@ dotenv.config();
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
-// Use the latest stable model name
-export const gemini = genAI.getGenerativeModel({ model: "models/gemini-1.5-pro" });
+// Use the latest stable model name - try gemini-pro or gemini-1.5-flash
+export const gemini = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
